@@ -1,0 +1,19 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  gap: 10px;
+}

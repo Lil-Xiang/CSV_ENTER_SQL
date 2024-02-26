@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>System</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="input-group mb-3 w-50">
+        <label class="input-group-text" for="inputGroupFile01">User :</label>
+        <input id="user-file" type="file" accept=".csv" class="form-control" id="inputGroupFile01">
+        <button id="send-user" class="btn btn-outline-secondary" type="button">送出</button>
+      </div>
+      <div class="input-group mb-3 w-50">
+        <label class="input-group-text" for="inputGroupFile01">Items :</label>
+        <input id="product-file" type="file" accept=".csv" class="form-control" id="inputGroupFile01">
+        <button id="send-product" class="btn btn-outline-secondary" type="button">送出</button>
+      </div>
+      <div class="d-grid gap-2 d-md-block">
+        <button id="get-user" class="btn btn-primary" type="button">拿使用者資料</button>
+        <button id="get-product" class="btn btn-primary" type="button">拿商品資料</button>
+      </div>
+      <table id="user-table" class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">USER_ID</th>
+            <th scope="col">PASSWORD</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <table id="product-table" class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">ITEM_ID</th>
+            <th scope="col">ITEM_MODEL</th>
+            <th scope="col">ITEM_DESC</th>
+            <th scope="col">ITEM_CATA</th>
+            <th scope="col">ITEM_PRICE</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>
